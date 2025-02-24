@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="zh-Hants">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>酥酥乃製所結帳系統</title>
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
+  <body>
+    <section class="goods">
+      <form action="/goods" , method="POST">
+        <div class="coloredPaper item" data-name="色紙" data-price="1500">
+          <img src="/pictures/colored_paper.png" alt="colored_paper" />
+          <div class="product">
+            <input
+              type="button"
+              value="-"
+              id="coloredPaper_minus"
+              class="minus"
+              disabled
+            /><input type="number" id="coloredPaper" name='coloredPaper' /
+            value="0" class="sum" readonly required ><input
+              type="button"
+              value="+"
+              id="coloredPaper_plus"
+              class="plus"
+            />
+          </div>
+        </div>
+        <div class="hangingScroll item" data-name="掛軸" data-price="600">
+          <img src="/pictures/hanging_scroll.png" alt="hanging_scroll" />
+          <div class="product">
+            <input
+              type="button"
+              value="-"
+              id="hangingScroll_minus"
+              class="minus"
+              disabled
+            /><input type="number" id="hangingScroll" name="hangingScroll" /
+            value="0" class="sum" readonly required><input
+              type="button"
+              value="+"
+              id="hangingScroll_plus"
+              class="plus"
+            />
+          </div>
+        </div>
+        <div class="keyChain item" data-name="鑰匙圈" data-price="150">
+          <img src="/pictures/key_chain.png" alt="key_chain" />
+          <div class="product">
+            <input
+              type="button"
+              value="-"
+              id="keyChain_minus"
+              class="minus"
+              disabled
+            /><input type="number" id="keyChain" name="keyChain" / value="0"
+            class="sum" readonly required><input
+              type="button"
+              value="+"
+              id="keyChain_plus"
+              class="plus"
+            />
+          </div>
+        </div>
+        <div class="manga item" data-name="漫畫" data-price="250">
+          <img src="/pictures/manga.jpg" alt="manga" />
+          <div class="product">
+            <input
+              type="button"
+              value="-"
+              id="manga_minus"
+              class="minus"
+              disabled
+            /><input type="number" id="manga" name="manga" / value="0"
+            class="sum" readonly required><input
+              type="button"
+              value="+"
+              id="manga_plus"
+              class="plus"
+            />
+          </div>
+        </div>
+        <div class="total-price">
+          <p>
+            總金額: $<input
+              id="total-price"
+              name="totalMoney"
+              value="0"
+              readonly
+            />
+          </p>
+        </div>
+        <input type="submit" value="&#9166;" class="button" />
+      </form>
+    </section>
+    <a href="/goods" class="goods">購買紀錄</a>
+  </body>
+  <script src="./button.js"></script>
+</html>

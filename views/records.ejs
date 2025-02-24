@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%= foundGood.date%>的購買紀錄</title>
+    <style>
+      table,
+      tr,
+      td {
+        border: 1px solid black;
+      }
+
+      a {
+        text-decoration: none;
+        background-color: aqua;
+        font-weight: bold;
+        font-size: 2rem;
+      }
+    </style>
+  </head>
+  <body>
+    <table>
+      <tr>
+        <td>購買紀錄 ID</td>
+        <td><%= foundGood._id %></td>
+      </tr>
+      <tr>
+        <td>色紙數量</td>
+        <td><%= foundGood.coloredPaper %></td>
+      </tr>
+      <tr>
+        <td>掛軸數量</td>
+        <td><%= foundGood.hangingScroll %></td>
+      </tr>
+      <tr>
+        <td>鑰匙圈數量</td>
+        <td><%= foundGood.keyChain %></td>
+      </tr>
+      <tr>
+        <td>漫畫數量</td>
+        <td><%= foundGood.manga %></td>
+      </tr>
+      <tr>
+        <td>總金額</td>
+        <td><%= foundGood.totalMoney %></td>
+      </tr>
+    </table>
+    <a href="/">回到首頁</a>
+  </body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>成功新增商品購買紀錄</title>
+    <style>
+      table,
+      tr,
+      td {
+        border: 1px solid black;
+      }
+
+      a {
+        text-decoration: none;
+        background-color: aqua;
+        font-weight: bold;
+        font-size: 2rem;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>成功新增商品購買紀錄</h1>
+    <p>以下為新增紀錄</p>
+    <table>
+      <tr>
+        <td>購買紀錄 ID</td>
+        <td><%= savedGood ._id %></td>
+      </tr>
+      <tr>
+        <td>色紙數量</td>
+        <td><%= savedGood .coloredPaper %></td>
+      </tr>
+      <tr>
+        <td>掛軸數量</td>
+        <td><%= savedGood .hangingScroll %></td>
+      </tr>
+      <tr>
+        <td>鑰匙圈數量</td>
+        <td><%= savedGood .keyChain %></td>
+      </tr>
+      <tr>
+        <td>漫畫數量</td>
+        <td><%= savedGood .manga %></td>
+      </tr>
+      <tr>
+        <td>總金額</td>
+        <td><%= savedGood .totalMoney %></td>
+      </tr>
+    </table>
+    <a href="/">回到首頁</a>
+  </body>
+</html>

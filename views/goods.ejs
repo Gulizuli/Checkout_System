@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>購買紀錄</title>
+    <style>
+      a {
+        text-decoration: none;
+      }
+      a.home {
+        text-decoration: none;
+        background-color: aqua;
+        font-weight: bold;
+        font-size: 2rem;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>購買紀錄</h1>
+    <ul>
+      <% goodData.forEach(good =>{%>
+      <li><a href="/goods/<%= good._id%>"><%= good.date%></a></li>
+      <%})%>
+    </ul>
+    <a href="/" class="home">回到首頁</a>
+  </body>
+</html>
